@@ -1,0 +1,57 @@
+#error_block {
+	transform: translateY(-50px);
+	p {
+		color: #606f89;
+		text-align: center;
+		line-height: 24px;
+
+		&.error_text {
+			font-size: 36px;
+			line-height: 44px;
+			margin-bottom: 25px;
+			font-weight: normal;
+
+			@media (max-width: 767.98px) {
+				margin-bottom: 35px;
+			}
+
+			@media (max-width: 575.98px) {
+				font-size: 24px;
+			}
+		}
+	}
+
+	.check_text {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 24px;
+		margin-bottom: 50px;
+	}
+
+	.error_logo {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+
+	.error_descr {
+		font-size: 12px;
+		line-height: 16px;
+		color: #ff3b3b;
+		margin: 35px auto;
+	}
+
+	input {
+		padding: 12px;
+	}
+
+	.blue_side {
+		@media (min-width: 991.98px) {
+			justify-content: center;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			min-height: 600px;
+		}
+	}
+}

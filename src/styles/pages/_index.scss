@@ -1,0 +1,28 @@
+#index {
+	#main_feed {
+		margin: 135px auto 0;
+		padding-left: 120px;
+
+		@media (max-width: 991.98px) {
+			margin-top: 70px;
+			padding-left: 0;
+		}
+
+		.bank_logo {
+			margin-bottom: 125px;
+			max-width: 270px;
+
+			img {
+				width: 100%;
+				object-fit: contain;
+			}
+		}
+
+		#index_form {
+			@media (max-width: 991.98px) {
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+}

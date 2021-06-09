@@ -1,0 +1,169 @@
+#payment_form {
+	max-width: 565px;
+	@media (max-width: 575.98px) {
+		transform: translateY(-50px);
+	}
+
+	@media (max-width: 991.98px) {
+		margin: 0 auto;
+	}
+
+	p {
+		color: #606f89;
+		font-size: 14px;
+		line-height: 24px;
+
+		&.name_descr {
+			font-style: normal;
+			font-weight: 300;
+			font-size: 12px;
+			line-height: 16px;
+			margin-bottom: 5px;
+		}
+
+		&.name {
+			font-weight: 500;
+		}
+
+		&.contract_label {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			color: #0072db;
+			margin-bottom: 5px;
+		}
+
+		&.percent {
+			color: #0072db;
+			margin-bottom: 5px;
+
+			@media (max-width: 575.98px) {
+				text-align: center;
+			}
+		}
+	}
+	.payment_wrapper {
+		display: flex;
+		margin-bottom: 65px;
+
+		@media (max-width: 575.98px) {
+			flex-direction: column;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+
+		.descr_block {
+			margin-right: 30px;
+			@media (max-width: 575.98px) {
+				margin: 20px auto;
+			}
+		}
+
+		.contract_block {
+			min-width: 170px;
+			margin-right: 30px;
+
+			@media (max-width: 575.98px) {
+				margin: 10px auto;
+			}
+
+			.contract_dropdown {
+				position: relative;
+
+				.dropdown_header {
+					display: flex;
+					align-items: center;
+					cursor: pointer;
+
+					@media (max-width: 575.98px) {
+						justify-content: center;
+					}
+
+					img {
+						margin-left: 15px;
+						width: 10px;
+						height: 6px;
+						transition: all 0.4s;
+					}
+
+					&.active {
+						img {
+							transform: rotate(180deg);
+							transition: all 0.4s;
+						}
+					}
+				}
+
+				.dropdown_content {
+					position: absolute;
+					top: 25px;
+					display: none;
+					padding: 5px;
+					width: 100%;
+					border-radius: 4px;
+					box-shadow: 0px 5px 20px rgba(35, 60, 122, 0.17);
+					background: #fff;
+
+					p {
+						&:hover {
+							cursor: pointer;
+							background: #c0c0c0;
+							color: #fff;
+						}
+					}
+
+					@media (max-width: 575.98px) {
+						left: 50%;
+						transform: translateX(-50%);
+					}
+				}
+			}
+		}
+	}
+
+	.input_wrapper {
+		display: flex;
+		margin-bottom: 65px;
+
+		@media (max-width: 1199.98px) {
+			flex-wrap: wrap;
+		}
+
+		@media (max-width: 991.98px) {
+			flex-wrap: nowrap;
+		}
+
+		@media (max-width: 575.98px) {
+			flex-direction: column;
+		}
+
+		.input_block {
+			margin-right: 30px;
+
+			@media (max-width: 575.98px) {
+				margin: 0 auto 30px;
+			}
+
+			input {
+				max-width: 170px;
+				font-size: 24px;
+				padding: 12px;
+				@media (max-width: 575.98px) {
+					width: 100%;
+				}
+
+				&::placeholder {
+					font-size: 24px;
+				}
+			}
+
+			label {
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	#paybtn {
+		margin: 0 auto 50px;
+	}
+}

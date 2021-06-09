@@ -1,0 +1,62 @@
+<section id="payment_form" style="display:none">
+
+    <div class="payment_wrapper">
+        <div class="descr_block">
+            <p class="name_descr">Ad, Soyad, ata adı.</p>
+            <p class="name">
+                Məmmədova Aydan Əli qızı
+            </p>
+        </div>
+        <div class="date_block">
+            <p class="name_descr">Təvəllüd</p>
+            <p class="name">01.01.1998</p>
+        </div>
+    </div>
+
+
+
+    <div class="payment_wrapper">
+        <div class="contract_block">
+            <p class="contract_label">Müqavilə nömrəsi</p>
+            <div class="contract_dropdown">
+                <div class="dropdown_header">
+                    <p>PRL - 077 - 0176 - 20</p>
+                    <img src="../assets/down-up.svg" alt="">
+                </div>
+
+                <div class="dropdown_content">
+                    <p>PRL - 017 - 0276 - 20</p>
+                    <p>PRL - 077 - 0176 - 20</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="contract_block">
+            <p class="contract_label">Məbləğ</p>
+            <p>846</p>
+        </div>
+        <div class="contract_block">
+            <p class="contract_label">Valyuta</p>
+            <p>AZN</p>
+        </div>
+    </div>
+
+    <div class="input_wrapper">
+        <div class="input_block">
+            <label for="current">Cari ödəniş</label>
+            <input type="number" inputmode="numeric" id="current" name="payment" placeholder="71.00" />
+        </div>
+        <div class="input_block">
+            <label for="comission">Komissiya haqqı</label>
+            <input type="number" id="comission" name="payment" placeholder="1.00" />
+        </div>
+        <div class="input_block">
+            <label for="payment_amount">Ödənilən məbləğ</label>
+            <input type="number" id="payment_amount" name="payment" placeholder="10.00" />
+        </div>
+    </div>
+    <p class="percent">* Ödənilən məbləğdən 1 AZN komissiya haqqı tutulur</p>
+    <input type="button" id="paybtn" value="Ödə" />
+
+
+</section>
